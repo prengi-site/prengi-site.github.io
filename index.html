@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Prengi</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="logo/logo_fav.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/media-styles.css">
+    </head>
+
+    <body>
+    <!-- ========================================================================================== -->
+<div class="header">
+<div class="overlay">
+    <div class="modal" id="access">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Просто заполните форму заявки</div>
+        <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+        <form method="post" class="feed-form feed-form_mt25" id="access-form" action="#">
+            <input name="name" placeholder="Ваше имя" value="" type="text">
+            <input name="phone" placeholder="Ваш телефон" value="">
+            <input name="email" placeholder="Ваш E-mail" value="" type="email">
+            <button class="modal__button button_submit">ПОЛУЧИТЬ ДОСТУП</button>
+        </form>
+    </div>
+    <div class="modal modal_mini" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+        <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+    </div>
+</div>
+        <header class="header">
+    <div class="container">
+        <div class="header__items">
+            <div class="header__item">
+                <img class="header__img" src="img/ukraine.jpg" alt="Ukraine">
+                <div class="header__address sm_invisible">
+                    <div class="header__country">Ukraine</div>
+                    <div class="header__tel">
+                        <h4>tel. +38(063) 930 07 002</h4>
+                        <h4 class="md_invisible">hi@vasolutions.com.ua</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="header__item">
+                <img class="header__img" src="img/gremany.jpg" alt="Germany">
+                <div class="header__address sm_invisible">
+                    <div class="header__country">Germany</div>
+                    <div class="header__tel">
+                        <h4 class="md_invisible">Trierer Strabe 35, 54329 Konz</h4>
+                        <h4>tel. +352 661 88 03 05</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="header__item">
+                <img class="header__img" src="img/estonia.jpg" alt="Estonia">
+                <div class="header__address sm_invisible">
+                    <div class="header__country">Estonia</div>
+                    <div class="header__tel">
+                        <h4 class="md_invisible">K. Karbery 16/27, 13812 Tallinn</h4>
+                        <h4>tel. +352 661 88 03 05</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="header__item">
+                <img class="header__img" src="img/britain.jpg" alt="Great_Britain">
+                <div class="header__address sm_invisible">
+                    <div class="header__country">Great_Britain</div>
+                    <div class="header__tel">
+                        <h4 class="md_invisible">E20LP, Golden vc House, London</h4>
+                        <h4>tel. +44 750 109 55 29</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="header__item">
+                <img src="img/luxemburg.jpg" alt="Luxembourg">
+                <div class="header__address sm_invisible">
+                    <div class="header__country">Luxembourg</div>
+                    <div class="header__tel">
+                        <h4 class="md_invisible">2,Rue d`Avalon, L-1159 Luxembourg</h4>
+                        <h4>tel. +352 661 88 03 05</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div id="up" class="promo">
+    <div class="promo__down">
+        <div class="promo__bg">
+            <div><img src="img/slide1.jpg" alt="slide1"></div>
+            <div><img src="img/slide2.jpg" alt="slide2"></div>
+            <div><img src="img/slide3.jpg" alt="slide3"></div>
+            <div><img src="img/slide4.jpg" alt="slide4"></div>
+            <div><img src="img/slide5.jpg" alt="slide5"></div>
+            <div><img src="img/slide6.jpg" alt="slide6"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="promo__top">
+            <div class="promo__wrapper">
+                <div class="promo__header">
+                    <div class="promo__logo">
+                        <img src="logo/logo_1.png" alt="logo">
+                    </div>
+                    <div class="promo__menu">
+                        <ul class="menu">
+                            <li class="menu_item"><a href="#" class="menu_link">главная</a></li>
+                            <li class="menu_item"><a href="#decisions" class="menu_link">модули</a></li>
+                            <li class="menu_item"><a href="#" class="menu_link">отрасли</a></li>
+                            <li class="menu_item"><a href="#" class="menu_link">о нас</a></li>
+                            <li class="menu_item"><a href="#" class="menu_link">наши обязательства</a>
+                        </ul>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="promo__titles">
+                    <div class="promo__title">Управляй своим бизнесом<br> через Smartphone</div>
+                    <div class="promo__subtitle sm_invisible">
+                        <h2><span>PRENGI</span> - Платформа для прозрачного<br> управления бизнесом</h2>
+                    </div>
+                    <button data-modal="access" class="promo__button">Получить доступ</button>
+                </div>
+                <img class="promo__img" src="img/header_phone.png" alt="phone">
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ===================================================================================== -->
+<div class="options">
+    <div class="container">
+        <div class="options__questions">
+            <div class="options__question">
+                <div class="options__descr">
+                    <img class="options__img" src="icons/icon1.png" alt="question1">
+                    <div class="options__descript">Нет оперативности<br> в принятии решений?</div>
+                </div>
+            </div>
+            <div class="options__question">
+                <div class="options__descr">
+                    <img class="options__img" src="icons/icon2.png" alt="question2">
+                    <div class="options__descript">Нет учета и контроля<br> обслуживания?</div>
+                </div>
+            </div>
+            <div class="options__question">
+                <div class="options__descr">
+                    <img class="options__img" src="icons/icon3.png" alt="question3">
+                    <div class="options__descript md_invisible sm_visible">Сложно строить прогнозы и<br> анализировать данные?</div>
+                    <div class="options__descript_md sm_invisible">Сложно анализировать данные?</div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================== -->
+        <img class="options__arrow" src="img/arrow_down.png" alt="arrow down">
+        <div class="options__sprengi">С PRENGI</div>
+        <!-- =========================== -->
+        <div class="options__options">
+            <div class="options__option">
+                <div class="options__descr">
+                    <img class="options__img" src="icons/icon4.png" alt="option4">
+                    <div class="options__descript options__descript_option">Все затраты спланированы<br> и расписаны</div>
+                </div>
+            </div>
+            <div class="options__option">
+                <div class="options__descr">
+                    <img class="options__img" src="icons/icon5.png" alt="option5">
+                    <div class="options__descript options__descript_option">Корректная аналитика данных<br> online</div>
+                </div>
+            </div>
+            <div class="options__option">
+                <div class="options__descr">
+                    <img class="options__img" src="icons/icon6.png" alt="option6">
+                    <div class="options__descript options__descript_option">Простая интеграция с любым<br> Вашим ПО</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ========================================================== -->
+        <div id="decisions" class="decisions">
+    <div class="container">
+        <div class="decisions__header">Prengi предоставляет экспертные решения<br>
+            для Вашей отрасли</div>
+        <div class="decisions__tabs">
+            <ul>
+                <li><button>Prengi Production</button></li>
+                <li><button>Prengi FMC</button></li>
+                <li><button>Prengi Mallz Retail</button></li>
+                <li><button>Prengi Logistic</button></li>
+                <li><button>Prengi IT</button></li>
+                <li><button>Prengi HR</button></li>
+            </ul>
+        </div>
+        <div class="decisions__mac">
+            <div class="decisions__img">
+                <div><img src="img/screen1.jpg" alt="screen1"></div>
+                <div><img src="img/screen2.jpg" alt="screen2"></div>
+                <div><img src="img/screen3.jpg" alt="screen3"></div>
+                <div><img src="img/screen4.jpg" alt="screen4"></div>
+                <div><img src="img/screen5.jpg" alt="screen5"></div>
+                <div><img src="img/screen6.jpg" alt="screen6"></div>
+            </div>
+            <img class="decisions__air" src="img/notebook.png" alt="macbook_air">
+        </div>
+    </div>
+</div>
+        <div class="advantages">
+    <div class="container">
+        <div class="advantages__title">Преимущества Prengi для<br> Вашей отрасли</div>
+        <div class="advantages__items">
+            <div class="advantages__item advantages__item_1">
+                <div class="advantages__descr">Возможность внедрения и<br> тестирования в реальном<br> времени</div>
+            </div>
+            <div class="advantages__item advantages__item_2">
+                <div class="advantages__descr">Система “Intellect”, учет уровня<br> доступов</div>
+            </div>
+            <div class="advantages__item advantages__item_3">
+                <div class="advantages__descr">Возможность использовать из<br> любой точки мира с любого<br> устройства</div>
+            </div>
+            <div class="advantages__item advantages__item_4">
+                <div class="advantages__descr">Нет необходимости установки<br> и стационарной работы<br> программиста</div>
+            </div>
+            <div class="advantages__item advantages__item_5">
+                <div class="advantages__descr">“Живые“<br> бизнес-процессы</div>
+            </div>
+            <div class="advantages__item advantages__item_6">
+                <div class="advantages__descr">Никаких предоплат, оплата<br> после старта</div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="variants">
+        <div class="variants__title">Варианты развертывания<br> Ваших данных</div>
+        <div class="variants__items">
+            <div class="variants__item">
+                <div class="variants__square">
+                    <div class="variants__subtitle">Облачное хранилище</div>
+                    <div class="variants__descr">Это выделенное пользователю пространство на жестком диске<br> сервера, находящегося в Интернете. </div>
+                </div>
+            </div>
+            <img class="variants__img" src="img/square.png" alt="square">
+            <div class="variants__item variants__item_right">
+                <div class="variants__square variants__square_right">
+                    <div class="variants__subtitle variants__subtitle_right">Размещение на сервере</div>
+                    <div class="variants__descr variants__descr_right">Услуга аренды пространства в центре обработки данных<br> (колокация серверов) предназначена для клиентов</div>
+                </div>
+            </div>
+            <img class="variants__img variants__img_right" src="img/square.png" alt="square">
+        </div>
+</div>
+        <div class="contact">
+    <div class="container">
+        <a href="http://www.3vvv3.ru" target="blank"><img class="contact__img" src="img/take_on_button_hand.png" alt="contact"></a>
+        <img class="contact__corner" src="img/button1.png" alt="contact">
+        <div class="contact__text">Приступить очень просто!<br> Нужно получить доступ и начать работу!</div>
+        <button data-modal="access" class="contact__button">связаться с нами</button>
+    </div>
+</div>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__sections">
+            <div class="footer__about">
+                <div class="footer__title">О компании</div>
+                <div class="footer__logo">
+                    <img src="logo/logo2.png" alt="logo">
+                </div>
+                <div class="footer__text esm_invisible">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</div>
+                <div class="footer__aboutdown"><a href="#">Управление задачами</a></div>
+            </div>
+            <div class="footer__modules">
+                <ul>
+                    <li>Модули</li>
+                    <li><a href="#">Обслуживание</a></li>
+                    <li><a href="#">Паспорт объекта</a></li>
+                    <li><a href="#">Автоматизация бизнес процессов (BPM)</a></li>
+                    <li><a href="#">Проектное управление (РРМ)</a></li>
+                    <li><a href="#">Управление подрядчиками</a></li>
+                    <li><a href="#">Персональный дашборд</a></li>
+                    <li><a href="#">Управление задачами</a></li>
+                    <li><a href="#">Управление алгоритмами</a></li>
+                    <li><a href="#">Управление качеством</a></li>
+                    <li><a href="#">Склад</a></li>
+                    <li><a href="#">Service desk</a></li>
+                    <li><a href="#">Календарь</a></li>
+                    <li><a href="#">Prengi market</a></li>
+                </ul>
+            </div>
+            <div class="footer__branchs sm_invisible">
+                <ul>
+                    <li>Отрасли</li>
+                    <li><a href="#">Промышленность</a></li>
+                    <li><a href="#">Ритейл</a></li>
+                    <li><a href="#">Фасилити</a></li>
+                    <li><a href="#">Логистика</a></li>
+                    <li><a href="#">IT</a></li>
+                    <li><a href="#">HR</a></li>
+                </ul>
+            </div>
+            <div class="footer__aboutus">
+                <ul>
+                    <li>О нас</li>
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Наши отношения</a></li>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__down">
+            Макет сайта:&copy; Prengi Ink. 2008-2022 Все права защищены.<br> Вестка сайта:Бикбулатов Валерий.
+            За основу взят код: https://github.com/ValeoPrime/Prengi, нкторые блоки и изображения переделаны по- своему
+
+        </div>
+    </div>
+</footer>
+        <a href="#up" class="pageup">
+    <img src="img/svg/top.svg" alt="up">
+</a>
+        <script src="js/main.js"></script>
+        <script src="js/vendor.js"></script>
+    </body>
+</html>
